@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Valyuta</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="#">
+              <img src="./img/bank_logo.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="">БАНК</a></li>
+              <li><a href="">БИЗНЕС</a></li>
+              <li><a href="">ИНВЕСТИЦИИ</a></li>
+              <li><a href="">СТРАХОВАНИЕ</a></li>
+              <li><a href="">МОБАЙЛ</a></li>
+              <li><a href="">ПУТЕШЕСТВИЯ</a></li>
+              <li><a href="">РАЗВЛЕЧЕНИЯ</a></li>
+            </ul>
+          </div>
+          <div class="login">
+            <button>ВОЙТИ</button>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="convertor">
+          <div class="convertor_head">
+            <h1>Конвертер валют онлайн</h1>
+          </div>
+          <div class="convertor_boxes">
+            <div class="left">
+                <p>У меня есть </p>
+                <div class="currency_select">
+                    
+                    <input class="btn_currency" type="button" value="RUB" style="background-color: #833ae0; color:white">
+                    <input class="btn_currency" type="button" value="USD">
+                    <input class="btn_currency" type="button" value="EUR">
+                    <input class="btn_currency" type="button" value="GBP">
+                </div>
+                <div class="currency_box">
+                    <input type="number" id="in_currency">
+                    <div>
+                        <p id="first_currency"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <p>Хочу приобрести</p>
+                <div class="currency_select">
+                    <input class="btn_currency" type="button" value="RUB">
+                    <input class="btn_currency" type="button" value="USD" style="background-color: #833ae0; color:white">
+                    <input class="btn_currency" type="button" value="EUR">
+                    <input class="btn_currency" type="button" value="GBP">
+                </div>
+                <div class="currency_box">
+                    <input type="number" id="out_currency">
+                    <div>
+                        <p id="second_currency">1 USD = 73.8896 RUB</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
