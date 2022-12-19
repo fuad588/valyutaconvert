@@ -128,3 +128,8 @@ nav .login button:hover {
   color: #c6c6c6;
   margin-left: 16px;
 }
+.error_message{
+  background-color: rgb(235, 111, 111);
+  text-align: center;
+  margin-top: 50px;
+}

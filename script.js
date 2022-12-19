@@ -61,7 +61,10 @@ function start_fetch(url, base, symbols, last_input = 1) {
         first_currency.innerHTML = `1 ${symbols} = ${index2} ${base}`;
         second_currency.innerHTML = `1 ${base} = ${index} ${symbols}`;
       }
-    });
+    })
+    .catch(error=>{
+      document.querySelector('.error_message').innerHTML = 'Gözlənilməyən xəta\nŞəbəkə əlaqəsini yoxlayın'
+  });
     fetch(`${url}base=${symbols}&symbols=${base}`)
     .then((response) => response.json())
     .then((data) => {
@@ -74,7 +77,10 @@ function start_fetch(url, base, symbols, last_input = 1) {
         first_currency.innerHTML = `1 ${symbols} = ${index2} ${base}`;
         second_currency.innerHTML = `1 ${base} = ${index} ${symbols}`;
       }
-    });
+    })
+    .catch(error=>{
+      document.querySelector('.error_message').innerHTML = 'Gözlənilməyən xəta\nŞəbəkə əlaqəsini yoxlayın'
+  });
 }
 in_currency.addEventListener("input", () => {
   out_currency.value = in_currency.value * index;
